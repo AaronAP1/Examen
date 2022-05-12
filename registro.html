@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro | AARON</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="tilos.css">
+	<script src="https://kit.fontawesome.com/3c0bd07c85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="conteiner">
+
+        <div id="i">
+            <div id="cajaI">
+            	<br><br><br><br><br><br>
+                <h2>REGISTRO ESTUDIANTE</h2>
+                <br>
+                <h3>Nombres:</h3>
+                <input type="text" id="nombre">
+                <br>
+                <br>
+                <h2>Sexo:</h2>
+                <form>
+                    <input type="radio" id="hombre" name="grupo">Hombre
+                    <input type="radio" id="mujer" name="grupo">Mujer
+                </form>
+                <br><br>
+                <div id="cico">
+                    <h2>Ciclo</h2>
+                    <select name="Seleccionar Ciclo:" id="ciclo">
+                        <option value="0" selected>Seleccionar Ciclo</option>
+                        <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                        <option value="4">IV</option>
+                        <option value="5">V</option>
+                        <option value="6">VI</option>
+                        <option value="7">VII</option>
+                        <option value="8">VIII</option>
+                        <option value="9">IX</option>
+                        <option value="10">X</option>
+                    </select>
+                </div>
+                <br><br>
+                <div id="ESCUELA">
+                    <H2>Escuela Profesional:</H2>
+                    <select name="Escuela profesional" id="ep">
+                        <option value="0">Seleccionar Escuela</option>
+                        <option value="1">Sistemas</option>
+                        <option value="2">Alimentos</option>
+                        <option value="3">Ambiental</option>
+                        <option value="4">Arquitectura</option>
+                        <option value="5">Civil</option>
+                    </select>
+                </div>
+
+                <button id="guardar" onclick="test();">Enviar</button>
+            </div>
+
+
+
+
+        </div>
+        <div id="d">
+
+        	<table id="tablita">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NOMBRES</th>
+                <th>SEXO</th>
+                <th>CICLO</th>
+                <th>ESCUELA PROFESIONAL</th>
+                <th>ACCION</th>
+                
+            </tr>
+        </thead>
+        <tbody id="datos">
+
+        </tbody>
+    </table>
+
+
+
+        </div>
+    </div>
+
+<script type="text/javascript" src="index2.js"></script>
+
+</body>
+
+
+</html>

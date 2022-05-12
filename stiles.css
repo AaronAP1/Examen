@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: white;
+	color: black;
+
+}
+
+#contenedor {	
+	max-width: 1600px;
+	margin: 5px auto;
+	display: grid;
+	text-align: center;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, auto); ;
+	grid-template-areas: "sistemas header"
+						 "sidebar main"	;
+
+
+}
+
+#sis{
+	background: black;
+	color:white;
+	grid-area: sistemas;
+}
+
+#hea{
+	background: gray;
+	color: white;
+	grid-area: header;
+}
+#sidebar {
+	height: 760px;
+	text-align: center;
+	background: orange;
+	color: white;
+	grid-area: sidebar;
+}
+
+#contenido{
+	grid-area: main;
+}
+
+#contenedor > div:nth-child(4){
+	background-color: transparent;
+	display: block;
+}
+
+
+#contenido {
+	margin:5px auto;
+	display: grid;
+	text-align: center;
+	grid-gap: 20px;
+	grid-template-columns: repeat(4, 1fr) ;
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "head head head head"
+						 "uno dos tres cuatro"
+						 "cuadro cuadrito cuadrado cuadros"
+						 "fin final finalito fina"	;
+
+}
+
+#ini {
+
+	background: blue;
+	text-align: center;
+	
+	
+}
+
+#uno {
+	background: yellow;
+	text-align: center;
+	grid-area: left;
+	float: right;
+	
+
+}
+#dos {
+	background: violet;
+	text-align: center;
+	grid-area: dos;
+	float: right;
+	
+
+}
+#tres {
+	background: red;
+	text-align: center;
+	grid-area: tres;
+	float: right;
+	
+
+}
+#cuatro {
+	background: lightblue;
+	text-align: center;
+	grid-area: cuatro;
+	float: right;
+	
+}
+
+#izquierda {
+	background: gray;
+	text-align: center;
+	grid-area: cuadro cuadrito;
+	clear: both;
+	
+
+
+
+}
+
+#derecha{
+	background: green;
+	text-align: center;
+	grid-area: cuadrado cuadros;
+	float: right;
+	}
+
+#a{
+	background: black;
+	text-align: center;
+	grid-area: fin final;
+	clear: both;
+	
+
+}
+
+#b{
+	background: lightblue;
+	text-align: center;
+	grid-area: finalito fina;
+	
+}
+
+
+
+@media screen and (max-width: 708px){
+	body{
+		background: green;
+	}
+}
